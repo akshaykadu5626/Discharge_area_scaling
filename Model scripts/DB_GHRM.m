@@ -5,7 +5,7 @@ load Ken_parameters.mat %Optimal parameters for Kentucky basin
 load Data_kenall.mat
 nos_basins= 8; %number of basins
 parameters_kenall=opt_paramgh;
-[basin_area name]=xlsread('BasinArea.xlsx');
+[basin_area name]=xlsread('Kentucky BasinArea.xlsx');
 rs= 24; %Model Temporal Resolution in hours
 klr=1
 for klr=1:nos_basins

@@ -6,3 +6,4 @@ Column 4- Streamflow (mm/day)
 Column 5- upstream length (km)
 Column 6- downstream length (km)
 Column 7- flow direction
+The file names Ken_parameters.mat consists of calibrated model parameters for the Kentucky basin. 

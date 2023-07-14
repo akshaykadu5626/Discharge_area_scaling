@@ -1,4 +1,4 @@
-function [IR] = DBM(R,PET)   % In this model, lag of one day has considered. see the part of model discharge calculation. where i+'1' represents the lag
+function [ER] = DBM(R,PET)   % In this model, lag of one day has considered. see the part of model discharge calculation. where i+'1' represents the lag
 % lag=0 ;
 %% all parameter values
 W=zeros(1,1);
@@ -71,23 +71,8 @@ IR = zeros(len,size(R,2));
 model_disch(1:366,1) = NaN ;
 for i = 366:len
     for j=1:size(R,2)
-        IR(i,j) = W(i,j)* (1-((phi(i,1)*tanh(phi(i,1)^(-1)))*(1-exp(-phi(i,1))))^0.5);
+        ER(i,j) = W(i,j)* (1-((phi(i,1)*tanh(phi(i,1)^(-1)))*(1-exp(-phi(i,1))))^0.5);
     end
 end
-%             for i=365:len-1
-%                 if i<=800
-%
-%                     for k=365:i
-%
-%                         model_disch(i+lag,1)= model_disch(i+lag,1) + IR(k,1)*0.4/((i-k)*0.4+1)/((i-k+1)*0.4+1);
-%                     end
-%                 else
-%                     for k=i-799:i
-%
-%                         model_disch(i+lag,1)= model_disch(i+lag,1) + IR(k,1)*0.4/((i-k)*0.4+1)/((i-k+1)*0.4+1);
-%                     end
-%                 end
-%             end
 
-end
 

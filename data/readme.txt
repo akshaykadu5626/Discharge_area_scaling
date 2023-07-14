@@ -1,7 +1,7 @@
 MATLAB script under the name DB_GHRM.m consist of Dynamic Budyko-GHRM model framework to simulate the discharge time series and calculates the scaling exponent for observed and modelled discharge.
 DBM is a MATLAB function that is called in DB_GHRM script to estimate the effective rainfall (ER) to be routed using GHRM.
 GHRM_event.m calculates the scaling exponent for event-based simulations with different synthetic effective rainfall as input.
-The MATLAB file named KentuckyData consists of climatic and streamflow data along with the upstream and downstream lengths of the channelized pixels.
+The MATLAB file named KentuckyData.mat consists of climatic and streamflow data along with the upstream and downstream lengths of the channelized pixels.
 Column 1- Rainfall (mm/day)
 Column 2- Avg. temperature (deg. Celcius)
 Column 3- PET (mm/day)

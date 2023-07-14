@@ -6,4 +6,10 @@ Column 4- Streamflow (mm/day)
 Column 5- upstream length (km)
 Column 6- downstream length (km)
 Column 7- flow direction
-The file names Ken_parameters.mat consists of calibrated model parameters for the Kentucky basin. 
+The file named Ken_parameters.mat consists of calibrated model parameters for the Kentucky basin. 
+
+%% For the events-based analysis, the synthetic rainfall of known characteristics were generated. 
+First column of -Data_kensynt4ev1.mat consists of 4-hr synthetic uniform effective rainfall events of 5 mm magnitude for 23 nested basins in Kentucky,  Cloumn 4-7 are the same as above.
+First column of -Data_kensynioev1.mat consists of 4-hr synthetic effective rainfall that gradually decreases towards downstream
+Similarly, the first column of -Data_kensyndoev1.mat consists of 4-hr synthetic effective rainfall that gradually decreases towards upstream.
+Excel file named BasinAreaAll.xlsx consists of basin areas of all the Kentucky basins.

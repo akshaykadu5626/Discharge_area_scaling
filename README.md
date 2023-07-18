@@ -1,6 +1,6 @@
 # Discharge_area_scaling
 
-#data
+# data
 The MATLAB file named KentuckyData.mat consists of climatic and streamflow data along with the upstream and downstream lengths of the channelized pixels.
 Column 1- Rainfall (mm/day)
 Column 2- Avg. temperature (deg. Celcius)
